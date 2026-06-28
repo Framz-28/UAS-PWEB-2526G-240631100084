@@ -1,10 +1,17 @@
+# SiKeu — Sistem Catatan Keuangan
+
+> Project Based Assessment — Ujian Akhir Semester (UAS) Mata Kuliah **Pemrograman Web**
+
+---
+
 ## Identitas
 
-
-| Nama | Muhammad Edric Faustadanendra |
-| NIM | 240631100084 |
-| Judul Aplikasi | SiKeu — Sistem Catatan Keuangan |
-| Mata Kuliah | Pemrograman Web |
+| | |
+|---|---|
+| **Nama** | Muhammad Edric Faustadanendra |
+| **NIM** | 240631100084 |
+| **Judul Aplikasi** | SiKeu — Sistem Catatan Keuangan |
+| **Mata Kuliah** | Pemrograman Web |
 
 ---
 
@@ -111,4 +118,53 @@ UAS-PWEB-2526G-240631100084
 └── README.md
 ```
 
-link youtube: https://youtu.be/Ia6xaReLThA?si=Eosn4ie1WL3A21cp
+## 📸 Tampilan Aplikasi
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>🔐 Halaman Login (pilih role)</b><br><br>
+      <img src="img/login.png" alt="Halaman Login" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <b>📊 Dashboard</b><br><br>
+      <img src="img/dashboard.png" alt="Dashboard" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>🌙 Mode Gelap (Dark Mode)</b><br><br>
+      <img src="img/dark.png" alt="Dark Mode" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <b>🛡️ Panel Admin (Kelola Member)</b><br><br>
+      <img src="img/admin.png" alt="Panel Admin" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>🧾 Cetak Laporan</b><br><br>
+      <img src="img/cetak.png" alt="Cetak Laporan" width="100%">
+    </td>
+    <td width="50%"></td>
+  </tr>
+</table>
+
+> Semua screenshot tersimpan di folder `img/`. Untuk menambah gambar lain, salin satu blok `<td>` di atas lalu ganti nama file & judulnya (mis. `img/daftar.png`, `img/register.png`, `img/phpmyadmin.png`).
+
+---
+
+## Cara Menjalankan Aplikasi
+
+1. **Install XAMPP**, aktifkan **Apache** & **MySQL**.
+2. Salin folder ini ke `htdocs`, contoh: `C:\xampp\htdocs\UAS-PWEB-2526G-240631100084`
+3. **Import database**: buka `http://localhost/phpmyadmin` → **Import** → pilih `database.sql` → **Go**.
+4. Cek `koneksi.php` (default XAMPP: host `localhost`, user `root`, password kosong).
+5. Buka: `http://localhost/UAS-PWEB-2526G-240631100084/`
+6. Login pilih role **Administrator** (`admin` / `admin123`), atau **Register** akun member baru.
+
+> Catatan: grafik memakai **Chart.js via CDN**, jadi pastikan ada internet saat membuka dashboard. (Untuk full offline, unduh `chart.umd.min.js` dan ubah `src` di `index.php`.)
+
+## ⚠️ Pernyataan Penggunaan GenAI
+
+Proyek ini dikembangkan **dengan bantuan Perangkat Kecerdasan Artifisial (GenAI)** sebagai alat bantu penyusunan struktur kode, tampilan antarmuka, dan dokumentasi. Seluruh kode telah dipelajari, diuji, dan dipahami oleh penulis. Pernyataan ini juga disampaikan di dalam video penjelasan YouTube sesuai ketentuan UAS.
